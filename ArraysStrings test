@@ -1,0 +1,271 @@
+//CODE 1
+package com.arraysstrings;
+import java.util.Scanner;
+public class CopyElements {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter the number of elements in the array: ");
+	        int n = sc.nextInt();
+	        int[] a = new int[n];
+	        System.out.println("Enter " + n + " elements:");
+	        for (int i = 0; i < n; i++) {
+	            a[i] = sc.nextInt();
+	        }
+	        int[] a1 = new int[n];
+	        for (int i = 0; i < n; i++) {
+	            a1[i] = a[i];
+	        }
+	        System.out.println("Elements of the copied array:");
+	        for (int i = 0; i < n; i++) {
+	            System.out.print(a1[i] + " ");
+	        }
+	        sc.close();
+	    }
+	}
+
+
+//CODE 2
+package com.arraysstrings;
+import java.util.Scanner;
+public class EvenNumers {
+	    public static void printEvenNumbers(int[] arr) {
+	        for (int num : arr) {
+	            if (num % 2 == 0) {  
+	                System.out.println(num);
+	            }
+	        }
+	    }
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter number of elements in the array: ");
+	        int n = sc.nextInt();
+	        int[] array = new int[n];
+	        System.out.println("Enter the elements of the array:");
+	        for (int i = 0; i < n; i++) {
+	            array[i] = sc.nextInt();
+	        }
+	        System.out.println("Even numbers in the array:");
+	        printEvenNumbers(array);
+	    }
+	}
+
+
+//CODE 3
+package com.arraysstrings;
+	import java.util.*;
+	public class OddNumber
+	{
+		    public static void main(String[] args) {
+		        Scanner sc = new Scanner(System.in);
+		        System.out.print("Number of elements in the array: ");
+		        int n = sc.nextInt();
+		        int[] a = new int[n];
+		        System.out.println("Enter " + n + " elements:");
+		        for (int i = 0; i < n; i++) {
+		            a[i] = sc.nextInt();
+		        }
+		        System.out.println("Odd numbers in the array:");
+		        for (int i = 0; i < n; i++) {
+		            if (a[i] % 2 != 0) { 
+		                System.out.print(a[i] + " ");
+		            }
+		        }
+		        sc.close();
+		    }
+		}
+
+
+
+//CODE 5
+package com.arraysstrings;
+import java.util.Scanner;
+public class SumNegative {
+	    public static int sumOfNegativeNumbers(int[] arr) {
+	        int sum = 0;
+	        for (int num : arr) {
+	            if (num < 0) {  
+	                sum += num;
+	            }
+	        }
+	        return sum;
+	    }
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter the number of elements in the array: ");
+	        int n = sc.nextInt();
+	        int[] array = new int[n];
+	        System.out.println("Enter the elements of the array:");
+	        for (int i = 0; i < n; i++) {
+	            array[i] = sc.nextInt();
+	        }
+	        int sum = sumOfNegativeNumbers(array);
+	        System.out.println("The sum of negative numbers in the array is: " + sum);
+	}
+
+}
+
+
+//CODE 6
+package com.arraysstrings;
+	import java.util.Scanner;
+
+	public class UniqueElements {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("number of elements in the array: ");
+	        int n = sc.nextInt();
+	        int[] array = new int[n];
+	        System.out.println("Enter " + n + " elements:");
+	        for (int i = 0; i < n; i++) {
+	            array[i] = sc.nextInt();
+	        }
+	        System.out.println("Unique elements in the array:");
+	        for (int i = 0; i < n; i++) {
+	            boolean isUnique = true;
+	            for (int j = 0; j < n; j++) {
+	                if (i != j && array[i] == array[j]) {
+	                    isUnique = false;
+	                    break;
+	                }
+	            }
+	            if (isUnique) {
+	                System.out.print(array[i] + " ");
+	            }
+	        }
+	    }
+	}
+
+
+
+//CODE 7package com.arraysstrings;
+	import java.util.Scanner;
+	public class PositiveNumbers {
+	    public static void printPositiveNumbers(int[] arr) {
+	        for (int num : arr) {
+	            if (num > 0) {  
+	                System.out.println(num);
+	            }
+	        }
+	    }
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);  
+	        System.out.print("number of elements in the array: ");
+	        int n = sc.nextInt();
+	        int[] array = new int[n];
+	        System.out.println("Elements of the array:");
+	        for (int i = 0; i < n; i++) {
+	            array[i] = sc.nextInt();
+	        }
+	        System.out.println("Positive numbers in the array:");
+	        printPositiveNumbers(array);
+	    }
+	}
+
+
+
+//CODE 8
+package com.arraysstrings;
+import java.util.*;
+public class AverageValue {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			int n=sc.nextInt();
+			int[] a=new int[n];
+			for(int i=0;i<a.length;i++){
+			    a[i]=sc.nextInt();
+			}
+			int sum=0;
+			for(int i=0;i<a.length;i++){
+			   sum=sum+a[i];
+			}
+			float avg=0.0f;
+			avg=sum/n;
+			System.out.printf("%.2f",avg);
+			
+		}
+	}
+
+
+//CODE 9
+package com.arraysstrings;
+	import java.util.Scanner;
+
+	public class SumElements {
+	    public static void main(String[] args) {
+	        Scanner sc= new Scanner(System.in);
+	        System.out.print("number of elements in the array: ");
+	        int n=sc.nextInt();
+	        int[] a = new int[n];
+	        System.out.println("Enter " + n + " elements:");
+	        for (int i = 0; i<n; i++) {
+	            a[i] = sc.nextInt();
+	        }
+	        int sum=0;
+	        for (int i = 0; i<n; i++) {
+	            sum=sum+a[i];
+	        }
+	        System.out.println("Sum of elements in the array : "+sum);
+	        sc.close();
+	    }
+	}
+
+
+//CODE 11
+package com.arraysstrings;
+import java.util.Scanner;
+public class CanonicalString {
+	    public static void main(String[] args) {
+	        Scanner sc= new Scanner(System.in);
+	        System.out.print("Enter a string: ");
+	        String userInput = sc.nextLine();
+	        String canonicalString = userInput.intern();
+	        System.out.println("Canonical representation of the input string: " + canonicalString);
+	}
+}
+
+
+//CODE 16
+package com.arraysstrings;
+	import java.util.Scanner;
+
+	public class ConcatenateStrings {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("first string: ");
+	        String a = sc.nextLine();
+	        System.out.print("second string: ");
+	        String b = sc.nextLine();
+	        String n2 = a.concat(b);
+	        System.out.println("Concatenate using concat() method: " + n2);
+	        sc.close();
+	    }
+	}
+
+
+//CODE 17
+package com.arraysstrings;
+import java.util.Scanner;
+public class CountOfUpperCaseLowerCase {
+	    public static void countLetterCases(String str) {
+	        int uppercaseCount = 0;
+	        int lowercaseCount = 0;
+	        for (char ch : str.toCharArray()) {
+	            if (Character.isUpperCase(ch)) {  
+	                uppercaseCount++;
+	            } else if (Character.isLowerCase(ch)) {  
+	                lowercaseCount++;
+	            }
+	        }
+	        System.out.println("Number of uppercase letters: " + uppercaseCount);
+	        System.out.println("Number of lowercase letters: " + lowercaseCount);
+	    }
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);    
+	        System.out.print("Enter a string: ");
+	        String inputString = sc.nextLine(); 
+	        countLetterCases(inputString);
+	    }
+	}
+
+
+
