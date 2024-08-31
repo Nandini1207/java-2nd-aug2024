@@ -1,4 +1,4 @@
-1. What will be the output of the following code?
+1. What will be the output of the following code?                  [c]
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ b) 20
 c) 30
 d) Compilation Error
 
-2. What will be the output of the following code snippet?
+2. What will be the output of the following code snippet?                               [d]
 
 public class Main {
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ b) 7
 c) 10
 d) 12
 
-3. What will be the output of the following code?
+3. What will be the output of the following code?                                   [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ b) 101 100
 c) 100 101
 d) 101 101
 
-4. What will be the output of the following code snippet?
+4. What will be the output of the following code snippet?                    [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -57,13 +57,13 @@ b) 45
 c) 40
 d) 55
 
-5. Which of the following is a valid variable declaration in Java?
+5. Which of the following is a valid variable declaration in Java?               [a]
 a) int _varName;
 b) int 123var;
 c) int var#Name;
 d) int var-Name;
-
-6. What will be the output of the following code?
+ 
+6. What will be the output of the following code?                              [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ b) 31
 c) 32
 d) 21
 
-7. What will be the output of the following code snippet?
+7. What will be the output of the following code snippet?                    [d]
 
 public class Main {
     public static void main(String[] args) {
@@ -92,14 +92,14 @@ b) 10
 c) 15
 d) 20
 
-8. Which of the following is true about variables in Java?
+8. Which of the following is true about variables in Java?                             [c]
 a) A variable name can start with a number.
 b) A variable can be declared with any special character in its name.
 c) A variable name can contain letters, digits, underscores, and dollar signs.
 d) A variable name can be a reserved keyword.
 Explanation: Variable names in Java can contain letters, digits, underscores (_), and dollar signs ($). They cannot start with a digit, contain special characters, or be a reserved keyword.
 
-9. What will be the output of the following code?
+9. What will be the output of the following code?                                [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -116,7 +116,7 @@ b) 10 5
 c) 10 10
 d) 5 5
 
-10. What will be the output of the following code snippet?
+10. What will be the output of the following code snippet?                           [b]
 
 public class Main {
     public static void main(String[] args) {
