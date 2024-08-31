@@ -1,4 +1,4 @@
-1. What is the output of the following code?
+1. What is the output of the following code?                                   [b]
 
 class Parent {
     void display() {
@@ -24,14 +24,15 @@ c) Compilation error
 d) Runtime error
 
 
-2. Which of the following statements is true about method overriding in Java?
+2. Which of the following statements is true about method overriding in Java?            [a]       
+
 a) Method overriding requires that the method in the subclass has the same name, return type, and parameter list as the method in the parent class.
 b) The overridden method in the subclass can have a different return type.
 c) Method overriding allows you to change the method's name and return type in the subclass.
 d) Overriding methods cannot throw exceptions.
 
 
-3. What will be the output of the following code?
+3. What will be the output of the following code?                                          [b]
 
 class A {
     void show() {
@@ -61,7 +62,7 @@ c) Compilation error
 d) Runtime error
 
 
-4. Can a final method be overridden in Java?
+4. Can a final method be overridden in Java?                                          [b]
 a) Yes
 b) No
 c) Only in an abstract class
@@ -98,7 +99,7 @@ c) Compilation error
 d) Runtime error
 
 
-6. What will be the output of the following code?
+6. What will be the output of the following code?                                      [b]
 
 class Animal {
     void sound() {
@@ -125,21 +126,21 @@ d) Runtime error
 
 
 
-7. Which of the following statements is true about method overriding and polymorphism?
+7. Which of the following statements is true about method overriding and polymorphism?       [b]
+
 a) Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass, and polymorphism allows the subclass method to be called through a superclass reference.
 b) Method overriding and polymorphism are unrelated concepts in Java.
 c) Method overriding requires the use of the static keyword.
 d) Polymorphism allows a superclass to override a method in a subclass.
 
 
-8. What will be the output of the following code?
+8. What will be the output of the following code?                         [b]
 
 class Parent {
     void greet() {
         System.out.println("Hello from Parent");
     }
 }
-
 class Child extends Parent {
     void greet() {
         System.out.println("Hello from Child");
@@ -149,7 +150,6 @@ class Child extends Parent {
         greet();
     }
 }
-
 public class Test {
     public static void main(String[] args) {
         Parent p = new Child();
@@ -162,7 +162,7 @@ c) Compilation error
 d) Runtime error
 
 
-9. Consider the following code snippet:
+9. Consider the following code snippet:                                    [a]
 
 class Base {
     void show() {
@@ -192,7 +192,7 @@ c) Compilation error
 d) Runtime error
 
 
-10. What will be the output of the following code?
+10. What will be the output of the following code?                                  [b]
 
 class Animal {
     void makeSound() {
