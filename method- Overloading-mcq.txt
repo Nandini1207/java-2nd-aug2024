@@ -1,22 +1,18 @@
-1. Which of the following statements is true about method overloading in Java?
+1. Which of the following statements is true about method overloading in Java?          [a]
 a) Method overloading allows a class to have multiple methods with the same name but different parameter lists.
 b) Method overloading is only possible with different return types.
 c) Method overloading requires methods to have the same parameter list.
 d) Method overloading is not supported in Java.
 
-
-
-2. What will be the output of the following code?
+2. What will be the output of the following code?                              [a]
 
 class Test {
     void print(int a) {
         System.out.println("int: " + a);
     }
-
     void print(double a) {
         System.out.println("double: " + a);
     }
-
     public static void main(String[] args) {
         Test obj = new Test();
         obj.print(5);
@@ -32,14 +28,14 @@ double: 5.5
 d) Compilation error
 
 
-3. Can method overloading be done by changing only the return type of the method in Java?
+3. Can method overloading be done by changing only the return type of the method in Java?   [b]
 a) Yes
 b) No
 c) Only if the method is static
 d) Only if the method is final
 
 
-4. Which of the following code snippets demonstrates valid method overloading?
+4. Which of the following code snippets demonstrates valid method overloading?         [c]
 a)
 
 void add(int a, int b) { }
@@ -57,7 +53,7 @@ d)
 void add(int a, int b) { }
 double add(double a, int b) { }
 
-5. What will be the output of the following code?
+5. What will be the output of the following code?                                       [a]
 
 class OverloadTest {
     void test(int a, double b) {
@@ -83,14 +79,14 @@ int and double
 d) Compilation error
 
 
-6. Which of the following statements is true regarding method overloading in Java?
+6. Which of the following statements is true regarding method overloading in Java?     [b]
 a) Method overloading can occur in the same class or in a subclass.
 b) Method overloading is strictly limited to methods within the same class.
 c) Method overloading can only occur with static methods.
 d) Method overloading requires the use of the final keyword.
 
-
-7. What will be the output of the following code?
+ 
+7. What will be the output of the following code?                                           [a]
 
 class A {
     void show(int a) {
@@ -118,8 +114,8 @@ A's show()
 c) Compilation error
 d) Runtime error
 
-
-8. What is the output of the following code?
+ 
+8. What is the output of the following code?                                              [a]
 
 class Test {
     void display(int a, double b) {
@@ -144,7 +140,7 @@ c) int and double
 int and double
 d) Compilation error
 
-9. Consider the following code snippet:
+9. Consider the following code snippet:                                         [b]
 
 class Calculator {
     int add(int a, int b) {
@@ -186,7 +182,7 @@ c) 11
 d) Compilation error
 
 
-10. What is the output of the following code?
+10. What is the output of the following code?                                      [a]
 
 class OverloadDemo {
     void show(int a) {
