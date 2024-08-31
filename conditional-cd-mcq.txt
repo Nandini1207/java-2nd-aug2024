@@ -1,4 +1,4 @@
-1. What will be the output of the following code?
+1. What will be the output of the following code?                             [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ b) b is greater
 c) a is greater b is greater
 d) Compilation Error
 
-2. What will be the output of the following code snippet?
+2. What will be the output of the following code snippet?                               [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ b) Odd
 c) 15
 d) Compilation Error
 
-3. What will be the output of the following code?
+3. What will be the output of the following code?                                      [a]
 
 public class Main {
     public static void main(String[] args) {
@@ -51,13 +51,14 @@ b) x is less than or equal to 0
 c) Compilation Error
 d) No output
 
-4. Which of the following will correctly execute a block of code if the variable x is greater than y?
+4. Which of the following will correctly execute a block of code if the variable x is greater than y?   
+                                                                                             [a]
 a) if (x > y)
 b) if x > y
 c) if (x > y) then
 d) if (x > y) {
 
-5. What will be the output of the following code?
+5. What will be the output of the following code?                                          [c]
 
 public class Main {
     public static void main(String[] args) {
@@ -76,7 +77,7 @@ b) a is greater
 c) b is greater
 d) Compilation Error
 
-6. What will be the output of the following code snippet?
+6. What will be the output of the following code snippet?                            [b]
 
 public class Main {
     public static void main(String[] args) {
@@ -89,8 +90,8 @@ a) Even
 b) Odd
 c) 5
 d) Compilation Error
-
-7. What will be the output of the following code?
+ 
+7. What will be the output of the following code?                                       [c]
 
 public class Main {
     public static void main(String[] args) {
@@ -105,13 +106,13 @@ b) x is not 10
 c) x is 10 and x is not 10
 d) Compilation Error
 
-8. Which of the following statements is true regarding the switch statement?
+8. Which of the following statements is true regarding the switch statement?                   [c]
 a) The switch statement can evaluate a boolean expression.
 b) The switch statement can only evaluate int expressions.
 c) The switch statement can evaluate char, byte, short, int, String, and enum types.
 d) The switch statement cannot use a default case.
 
-9. What will be the output of the following code?
+9. What will be the output of the following code?                                            [c]
 
 public class Main {
     public static void main(String[] args) {
@@ -142,7 +143,7 @@ b) Tuesday
 c) Wednesday
 d) Weekend
 
-10. What will be the output of the following code snippet?
+10. What will be the output of the following code snippet?                                  [c]
 
 public class Main {
     public static void main(String[] args) {
