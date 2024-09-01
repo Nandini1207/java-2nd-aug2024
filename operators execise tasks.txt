@@ -6,9 +6,102 @@ Subtraction
 Multiplication
 Division
 Modulus
+
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+        int n1 = 4;
+        int n2 = 2;
+        // Addition
+        int sum = n1 + n2;
+        System.out.println("Addition: " + n1 + " + " + n2 + " = " + sum);
+        // Subtraction
+        int difference = n1 - n2;
+        System.out.println("Subtraction: " + n1+ " - " + n2+ " = " + difference);
+        // Multiplication
+        int product = n1 * n2;
+        System.out.println("Multiplication: " + n1 + " * " + n2 + " = " + product);
+        // Division
+        int quotient = n1 / n2;
+        System.out.println("Division: " + n1 + " / " + n2 + " = " + quotient);
+        // Modulus
+        int remainder = n1 % n2;
+        System.out.println("Modulus: " + n1 + " % " + n2 + " = " + remainder);
+    }
+}
+output:
+Addition: 4 + 2 = 6
+Subtraction: 4 - 2 = 2
+Multiplication: 4 * 2 = 8
+Division: 4 / 2 = 2
+Modulus: 4 % 2 = 0
+
+
 Exercise 2: Comparison Operators
 Write a Java program that compares two integers and prints whether they are equal, not equal, greater than, less than, greater than or equal to, and less than or equal to.
+
+public class ComparisonOperators {
+    public static void main(String[] args) {
+        int number1 = 4;
+        int number2 = 2
+        boolean isEqual = (n1==n2);
+        System.out.println(n1 + " == " + n " : " + isEqual);
+        boolean isNotEqual = (n1!=n2);
+        System.out.println(n1 + " != " + n2 + " : " + isNotEqual);
+        boolean isGreaterThan = (n1>n2);
+        System.out.println(n1 + " > " + n2 + " : " + isGreaterThan);
+        boolean isLessThan = (n1<n2);
+        System.out.println(n1 + " < " + n2 + " : " + isLessThan);
+        boolean isGreaterThanOrEqual = (n1>=n2);
+        System.out.println(n1 + " >= " + n2 + " : " + isGreaterThanOrEqual);
+        boolean isLessThanOrEqual = (n1<=n2);
+        System.out.println(n1 + " <= " + n2 + " : " + isLessThanOrEqual);
+    }
+}
+output:
+4 == 2 : false
+4 !=2 : true
+4 > 2 : true
+4 < 2 : false
+4 >= 2 : true
+4 <= 2 : false
+
+
 Exercise 3: Logical Operators
 Write a Java program that uses logical operators to determine if a given number is within a specified range (between 10 and 20, inclusive).
+
+import java.util.Scanner;
+public class Range {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        boolean isWithinRange = (n >= 10) && (n <= 20);
+        if (isWithinRange) {
+            System.out.println(n + " within the range of 10 to 20");
+        } else {
+            System.out.println(n + " not within the range of 10 to 20");
+        }
+    }
+}
+output:
+Enter a number: 15
+15  within the range of 10 to 20.
+
+
 Exercise 4: Ternary Operator
 Write a Java program that uses the ternary operator to determine if a given number is even or odd and prints the result.
+
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+        String N = (n % 2 == 0) ? "even" : "odd";
+        System.out.println("The number " + n + " is " + N + );
+    }
+}
+output:
+Enter a number: 4
+The number 4 is even
+
