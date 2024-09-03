@@ -2,23 +2,290 @@ Exercise 1: Encapsulation with Getter and Setter
 
 Create a class called Person with private fields name, age, and email. Provide public getter and setter methods for each of these fields.
 
+public class Person {
+    private String name;
+    private int age;
+    private String email;
+    public Person(String name, int age, String email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+    // Setter for age
+    public void setAge(int age) {
+        if (age >= 0) {  
+            this.age = age;
+        } else {
+            System.out.println("Age cannot be negative.");
+        }
+    }
+    // Getter for email
+    public String getEmail() {
+        return email;
+    }
+    // Setter for email
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void displayPersonDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Email: " + email);
+    }
+}
+-----------------------------------------
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person("Nandu", 21, "nandu@gmail.com");
+        p.displayPersonDetails();
+        p.setName("Nandini");
+        p.setAge(21);
+        p.setEmail("nandini@gmail.com");
+        p.displayPersonDetails();
+    }
+}
+
+OUTPUT:
+Name: Nandu
+Age: 21
+Email: nandu.@gmail.com
+Name: Nandini
+Age: 21
+Email: nandini.@gmail.com
+______________________________________________________________________________________________________________
+
+
 Exercise 2: Using Encapsulation
 
 Create a Main class to demonstrate the use of encapsulation by creating an instance of the Person class, setting its fields using the setter methods, and then retrieving and displaying the values using the getter methods.
 
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person("Ram", 24, "ram.@gmail.com");
+        System.out.println("Initial Details:");
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("Email: " + person.getEmail());
+        person.setName("Sita");
+        person.setAge(25);
+        person.setEmail("sita.@gmail.com");
+        System.out.println("\nUpdated Details:");
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("Email: " + person.getEmail());
+    }
+}
+OUTPUT:
+Initial Details:
+Name: Ram
+Age: 24
+Email: ram.@gmail.com
+
+Updated Details:
+Name: Sita
+Age: 25
+Email: sita.@gmail.com
+_________________________________________________________________________________________________________
+
 Exercise 3: Encapsulation with Constructors
 
 Modify the Person class to include a constructor that accepts parameters for name, age, and email. Use this constructor to initialize the fields when an object of the Person class is created.
-Exercise 4: Using Encapsulation with Constructors
 
+public class Person {
+    private String name;
+    private int age;
+    private String email;
+    public Person(String name, int age, String email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+    // Setter for age
+    public void setAge(int age) {
+        if (age >= 0) {  
+            this.age = age;
+        } else {
+            System.out.println("Age cannot be negative.");
+        }
+    }
+    // Getter for email
+    public String getEmail() {
+        return email;
+    }
+    // Setter for email
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void displayPersonDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Email: " + email);
+    }
+}
+----------------------------------------------------------
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person("Raju", 30, "raju@gmail.com");
+        System.out.println("Initial Details:");
+        System.out.println("Name: " + p.getName());
+        System.out.println("Age: " + p.getAge());
+        System.out.println("Email: " + p.getEmail());
+        p.setName("Rani");
+        p.setAge(25);
+        p.setEmail("rani@gmail.com");
+        System.out.println("\nUpdated Details:");
+        System.out.println("Name: " + p.getName());
+        System.out.println("Age: " + p.getAge());
+        System.out.println("Email: " + p.getEmail());
+    }
+}
+OUTPUT:
+Initial Details:
+Name: Raju
+Age: 30
+Email: raju@gmail.com
+
+Updated Details:
+Name: Rani
+Age: 25
+Email: rani@gmail.com
+
+______________________________________________________________________________________________
+
+
+Exercise 4: Using Encapsulation with Constructors
 Modify the Main class to create an instance of the Person class using the constructor with parameters and then display the person's attributes.
 
-Exercise 5: Encapsulation with Validation
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person("Ram", 22, "ram.@gmail.com");
+        System.out.println("Person Details:");
+        System.out.println("Name: " + p.getName());
+        System.out.println("Age: " + p.getAge());
+        System.out.println("Email: " + p.getEmail());
+    }
+}
+OUTPUT:
+Person Details:
+Name: Ram
+Age: 22
+Email: ram.@gmail.com
 
+Exercise 5: Encapsulation with Validation
 Enhance the Person class to include validation in the setter methods. The setAge() method should ensure that the age is within a reasonable range (e.g., between 0 and 120), and the setEmail() method should validate that the email is in a valid format (e.g., contains "@" and "." symbols).
 
-Exercise 6: Using Encapsulation with Validation
+public class Person {
+    private String name;
+    private int age;
+    private String email;
+    public Person(String name, int age, String email) {
+        this.name = name;
+        setAge(age);   
+        setEmail(email);
+    }
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+    // Setter for age with validation (must be between 0 and 120)
+    public void setAge(int age) {
+        if (age >= 0 && age <= 120) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age. Age must be between 0 and 120.");
+        }
+    }
+    // Getter for email
+    public String getEmail() {
+        return email;
+    }
+    // Setter for email with validation (must contain "@" and ".")
+    public void setEmail(String email) {
+        if (email.contains("@") && email.contains(".")) {
+            this.email = email;
+        } else {
+            System.out.println("Invalid email format. Email must contain '@' and '.'.");
+        }
+    }
+    public void displayPersonDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Email: " + email);
+    }
+}
+----------------------------------------------------------
+public class Main {
+    public static void main(String[] args) {
+        Person person1 = new Person("Nandu", 25, "nandu.@gmail.com");
+        System.out.println("Person 1 Details:");
+        person1.displayPersonDetails();
+        System.out.println("\nUpdating Person 1 with invalid age:");
+        person1.setAge(150); 
+        person1.displayPersonDetails();
+        System.out.println("\nUpdating Person 1 with invalid email:");
+        person1.setEmail("invalidemail.com"); 
+        person1.displayPersonDetails();
+        System.out.println("\nCorrecting email:");
+        person1.setEmail("john.correct@example.com");
+        person1.displayPersonDetails();
+    }
+}
+OUTPUT:
+Person 1 Details:
+Name: Nandu
+Age: 25
+Email: nandu.@gmail.com
 
+Updating Person 1 with invalid age:
+Invalid age. Age must be between 0 and 120.
+Name: Nandu
+Age: 25
+Email: nandu.@gmail.com
+
+Updating Person 1 with invalid email:
+Invalid email format. Email must contain '@' and '.'.
+Name: Nandu
+Age: 25
+Email: nandu.@gmail.com
+
+Correcting email:
+Name: Nandu
+Age: 25
+Email: john.correct@example.com
+____________________________________________________________________________________________
+Exercise 6: Using Encapsulation with Validation
 Modify the Main class to create an instance of the Person class and set its attributes, including invalid values. Observe that the validation in the setter methods prevents setting invalid values.
 
 Exercise 7: Encapsulation with Aggregation
